@@ -49,11 +49,58 @@ if Tamano >= 6:
 
 # Colocar una bomba en el centro del tablero
     bomba_pos = (Tamano // 2, Tamano // 2)  # Centro del tablero divide entre 2 para colocarlo en el centro                                                                     Utiliza la división entera para encontrar la mitad del tamaño del tablero. La tupla (Tamano // 2, Tamano // 2) resulta en coordenadas que indican el centro del tablero.
-    Tablero[bomba_pos[0]][bomba_pos[1]] = "💣︎"  # '💣︎' representa la bomba colo ca labomba segun el resultado de bomba_pos
+    Tablero[bomba_pos[0]][bomba_pos[1]] = "💣︎"  # '💣︎' representa la bomba colo ca labomba segun el resultado de bomba_pos                                                         Asigna el símbolo de la bomba ("💣︎") a la celda en el tablero que corresponde a las coordenadas almacenadas en bomba_pos.
 
 # Mostrar el tablero
     for fila in Tablero:
-        print(" ".join(fila)) #quita las comas y '' de la matriz
-
+        print(" ".join(fila)) #quita las comas y '' de la matriz                                                                                                                        Este bucle recorre cada fila del tablero (que está representado como una lista de listas) y las imprime de forma legible
+                                                                                                                                                                                           " ".join(fila): Esta parte toma cada fila (que es una lista de elementos) y los une en una sola cadena, separando cada elemento con un espacio. Por ejemplo, si una fila es ["x", ".", "P1", ".", "x"], el resultado sería "x . P1 . x".
 else:
-    print("Ingresar número mayor a 6")
+    print("Ingresar número mayor a 6")                                                                                                                                                                 Este bloque se ejecuta si la condición previa (el tamaño del tablero) no se cumple.
+
+
+
+
+
+Tipos de datos
+Simples: como los enteros, puntos flotantes, caracteres y de
+valor booleano.
+
+Compuestos: como los arreglos y matrices, los cuales serán estudiados
+posteriormente.
+
+Definidos por el programador: como las clases y sus relaciones.
+
+
+
+
+int    Números enteros.
+edad = 33
+anno_nacimiento = 1987
+cantidad_mascotas = 3
+
+
+float Números con decimales o de punto flotante.
+imc = 23.40
+estatura = 1.70
+
+
+String Caracteres o letras (se puede usar comillas simples
+o dobles).
+sistema_operativo = "Linux"
+nombre_completo = 'Ada Lovelace'
+
+
+boolean Valores lógicos, verdadero o falso. (Tanto los valores
+de True y False inician con mayúscula en Python)
+
+
+
+
+
+
+
+
+
+
+
